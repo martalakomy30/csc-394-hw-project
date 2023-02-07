@@ -21,6 +21,6 @@ from django.contrib.auth.models import User
 class Perfume(models.Model):
     perfume_name = models.CharField(max_length=60)
     brand_name = models.CharField(max_length=60)
-    students = models.ManyToManyField(Student)    
+    #students = models.ManyToManyField(Student)    
     def __str__(self) -> str:
         return self.perfume_name + " by " + brand_name
